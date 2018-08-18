@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		2B19BA1E2123770A00016E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19BA1D2123770A00016E29 /* AppDelegate.swift */; };
-		2B19BA202123770A00016E29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19BA1F2123770A00016E29 /* ViewController.swift */; };
 		2B19BA232123770A00016E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B19BA212123770A00016E29 /* Main.storyboard */; };
 		2B19BA252123770C00016E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B19BA242123770C00016E29 /* Assets.xcassets */; };
 		2B19BA282123770C00016E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B19BA262123770C00016E29 /* LaunchScreen.storyboard */; };
+		2B19BA302123781800016E29 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19BA2F2123781800016E29 /* HomeController.swift */; };
+		2B19BA3321241A4900016E29 /* Retro60Prime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B19BA3221241A4900016E29 /* Retro60Prime.ttf */; };
+		2B19BA352124454A00016E29 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19BA342124454A00016E29 /* Console.swift */; };
+		2B19BA392124951B00016E29 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19BA382124951B00016E29 /* DetailController.swift */; };
+		2B5F8CF72128928E00C80A51 /* ConsoleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B19BA1A2123770A00016E29 /* Console rétro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Console rétro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B19BA1D2123770A00016E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B19BA1F2123770A00016E29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B19BA222123770A00016E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B19BA242123770C00016E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B19BA272123770C00016E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B19BA292123770C00016E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B19BA2F2123781800016E29 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		2B19BA3221241A4900016E29 /* Retro60Prime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Retro60Prime.ttf; sourceTree = "<group>"; };
+		2B19BA342124454A00016E29 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		2B19BA382124951B00016E29 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		2B19BA1C2123770A00016E29 /* Console rétro */ = {
 			isa = PBXGroup;
 			children = (
+				2B19BA31212419EA00016E29 /* Ressources */,
 				2B19BA1D2123770A00016E29 /* AppDelegate.swift */,
-				2B19BA1F2123770A00016E29 /* ViewController.swift */,
 				2B19BA212123770A00016E29 /* Main.storyboard */,
 				2B19BA242123770C00016E29 /* Assets.xcassets */,
 				2B19BA262123770C00016E29 /* LaunchScreen.storyboard */,
 				2B19BA292123770C00016E29 /* Info.plist */,
+				2B19BA2F2123781800016E29 /* HomeController.swift */,
+				2B19BA342124454A00016E29 /* Console.swift */,
+				2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */,
+				2B19BA382124951B00016E29 /* DetailController.swift */,
 			);
 			path = "Console rétro";
+			sourceTree = "<group>";
+		};
+		2B19BA31212419EA00016E29 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				2B19BA3221241A4900016E29 /* Retro60Prime.ttf */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +145,7 @@
 				2B19BA282123770C00016E29 /* LaunchScreen.storyboard in Resources */,
 				2B19BA252123770C00016E29 /* Assets.xcassets in Resources */,
 				2B19BA232123770A00016E29 /* Main.storyboard in Resources */,
+				2B19BA3321241A4900016E29 /* Retro60Prime.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B19BA202123770A00016E29 /* ViewController.swift in Sources */,
+				2B19BA302123781800016E29 /* HomeController.swift in Sources */,
+				2B19BA352124454A00016E29 /* Console.swift in Sources */,
+				2B5F8CF72128928E00C80A51 /* ConsoleCollection.swift in Sources */,
+				2B19BA392124951B00016E29 /* DetailController.swift in Sources */,
 				2B19BA1E2123770A00016E29 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9KUX2554RJ;
 				INFOPLIST_FILE = "Console rétro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9KUX2554RJ;
 				INFOPLIST_FILE = "Console rétro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
