@@ -15,27 +15,19 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Depart Controller-->
+        <!--Home Controller-->
         <scene sceneID="Rag-K3-zbO">
             <objects>
-                <viewController id="ipX-J7-KhX" customClass="DepartController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ipX-J7-KhX" customClass="HomeController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kg8-1F-xre">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console retro.png" translatesAutoresizingMaskIntoConstraints="NO" id="dQc-1i-7T8">
-                                <rect key="frame" x="62.666666666666657" y="108" width="249.99999999999997" height="250"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="Ukh-kQ-Ted"/>
-                                    <constraint firstAttribute="width" constant="250" id="XGr-dn-zO7"/>
-                                </constraints>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M7o-Hg-0W5">
-                                <rect key="frame" x="20" y="398" width="335" height="250"/>
+                                <rect key="frame" x="20" y="394" width="335" height="254"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Bienvenue sur l'application des consoles retro. Decouvrez ou re-decouvrez toutes les histoires et anecdotes de toutes les consoles sorti en France.</string>
-                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOX-ja-E0t">
@@ -51,20 +43,28 @@
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="RetroBouton:" destination="ipX-J7-KhX" eventType="touchUpInside" id="sxo-pa-hOe"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="cEg-IM-yB9"/>
+                                    <action selector="GoButton:" destination="ipX-J7-KhX" eventType="touchUpInside" id="M2l-2d-94x"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Goretro" id="cEg-IM-yB9"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console retro.png" translatesAutoresizingMaskIntoConstraints="NO" id="dQc-1i-7T8">
+                                <rect key="frame" x="37.666666666666657" y="74" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="D7j-Xe-6Zk"/>
+                                    <constraint firstAttribute="height" constant="300" id="WD4-bT-75J"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.51372549019607838" green="0.46274509803921571" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dQc-1i-7T8" firstAttribute="top" secondItem="uXS-fG-mcw" secondAttribute="top" constant="20" id="BJ5-hj-fqG"/>
+                            <constraint firstItem="dQc-1i-7T8" firstAttribute="centerX" secondItem="Kg8-1F-xre" secondAttribute="centerX" id="Aee-J8-REq"/>
                             <constraint firstItem="uXS-fG-mcw" firstAttribute="trailing" secondItem="yOX-ja-E0t" secondAttribute="trailing" constant="50" id="K16-hY-orv"/>
-                            <constraint firstItem="dQc-1i-7T8" firstAttribute="centerX" secondItem="Kg8-1F-xre" secondAttribute="centerX" id="P8B-1s-vrl"/>
+                            <constraint firstItem="dQc-1i-7T8" firstAttribute="top" secondItem="uXS-fG-mcw" secondAttribute="top" constant="30" id="S4b-LT-CfR"/>
+                            <constraint firstItem="M7o-Hg-0W5" firstAttribute="top" secondItem="dQc-1i-7T8" secondAttribute="bottom" constant="20" id="VJN-tc-qGw"/>
                             <constraint firstItem="yOX-ja-E0t" firstAttribute="top" secondItem="M7o-Hg-0W5" secondAttribute="bottom" constant="40" id="e7Z-9J-Sxm"/>
                             <constraint firstItem="uXS-fG-mcw" firstAttribute="bottom" secondItem="yOX-ja-E0t" secondAttribute="bottom" constant="50" id="lhs-ZQ-bZw"/>
                             <constraint firstItem="uXS-fG-mcw" firstAttribute="trailing" secondItem="M7o-Hg-0W5" secondAttribute="trailing" constant="20" id="llj-aD-s5r"/>
-                            <constraint firstItem="M7o-Hg-0W5" firstAttribute="top" secondItem="dQc-1i-7T8" secondAttribute="bottom" constant="40" id="oSX-Uz-PMi"/>
                             <constraint firstItem="yOX-ja-E0t" firstAttribute="leading" secondItem="uXS-fG-mcw" secondAttribute="leading" constant="50" id="qxy-Tf-aUy"/>
                             <constraint firstItem="M7o-Hg-0W5" firstAttribute="leading" secondItem="uXS-fG-mcw" secondAttribute="leading" constant="20" id="v5k-RT-c3q"/>
                         </constraints>
@@ -72,27 +72,27 @@
                     </view>
                     <navigationItem key="navigationItem" id="9kp-DD-JdY"/>
                     <connections>
-                        <outlet property="RetroImage" destination="dQc-1i-7T8" id="sAA-LE-rf9"/>
-                        <outlet property="RetroTextField" destination="M7o-Hg-0W5" id="xTP-GO-wmM"/>
+                        <outlet property="BienvenueImage" destination="M7o-Hg-0W5" id="U1r-aT-ntN"/>
+                        <outlet property="RetroImage" destination="dQc-1i-7T8" id="1l9-FR-KJZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fC1-70-5LG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1528.8" y="18.472906403940886"/>
         </scene>
-        <!--Home Controller-->
+        <!--Retro Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RetroController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Game Boy Advance" translatesAutoresizingMaskIntoConstraints="NO" id="Gux-vC-Pae">
-                                <rect key="frame" x="20" y="228" width="335" height="470"/>
+                                <rect key="frame" x="20" y="184" width="335" height="514"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Console Retro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBh-44-fOt">
-                                <rect key="frame" x="20" y="98" width="335" height="30"/>
+                                <rect key="frame" x="20" y="54" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="zfu-EW-1Xa"/>
                                 </constraints>
@@ -109,21 +109,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="68.333333333333329" height="50"/>
                                         <state key="normal" image="gauche"/>
                                         <connections>
-                                            <action selector="PreviewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQ6-et-DWQ"/>
+                                            <action selector="PreviewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3e-g1-ETn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruR-bM-Mqb">
                                         <rect key="frame" x="133.33333333333334" y="0.0" width="68.333333333333343" height="50"/>
                                         <state key="normal" image="aleatoire"/>
                                         <connections>
-                                            <action selector="RandomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mYe-2x-kUx"/>
+                                            <action selector="RandomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Yh-Uj-a4N"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG1-Vt-QMX">
                                         <rect key="frame" x="266.66666666666669" y="0.0" width="68.333333333333314" height="50"/>
                                         <state key="normal" image="droite"/>
                                         <connections>
-                                            <action selector="NextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Raa-jI-fsx"/>
+                                            <action selector="NextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ErG-gE-1HV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -144,7 +144,7 @@
                                 </variation>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Game Boy Advance" translatesAutoresizingMaskIntoConstraints="NO" id="vM0-71-MM8">
-                                <rect key="frame" x="20" y="148" width="335" height="60"/>
+                                <rect key="frame" x="20" y="104" width="335" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="pW2-sC-Zci"/>
                                 </constraints>
@@ -193,9 +193,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="RSu-zI-3j8"/>
                     <connections>
-                        <outlet property="LogoImage" destination="vM0-71-MM8" id="1EY-f1-Stk"/>
-                        <outlet property="RetroIV" destination="Gux-vC-Pae" id="zgv-u9-eDP"/>
-                        <outlet property="TitleLabel" destination="uBh-44-fOt" id="Edp-lt-uqX"/>
+                        <outlet property="LogoImage" destination="vM0-71-MM8" id="aW4-Jt-Iii"/>
+                        <outlet property="RetroIV" destination="Gux-vC-Pae" id="yfs-Il-SpQ"/>
+                        <outlet property="TitleLabel" destination="uBh-44-fOt" id="JHb-iM-VTJ"/>
                         <segue destination="483-hz-c0C" kind="show" identifier="Detail" id="1NG-tP-3Eb"/>
                     </connections>
                 </viewController>
@@ -390,24 +390,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7E-c4-ref" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2874.4000000000001" y="17.733990147783253"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="KUb-yR-OBq">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="php-T1-se7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NFZ-W7-CF4" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IrG-hg-ZNx">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ipX-J7-KhX" kind="relationship" relationship="rootViewController" id="hwH-E1-jNW"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="586.39999999999998" y="18.472906403940886"/>
         </scene>
     </scenes>
     <resources>
