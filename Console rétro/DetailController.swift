@@ -24,6 +24,7 @@ class DetailController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         guard console != nil else { return }
         title = "Les consoles rétro"
         TitleLogo.image = console!.logoImage

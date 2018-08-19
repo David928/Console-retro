@@ -19,6 +19,7 @@ class Console {
     private var _logo: String
     private var _unite: Float
     private var _hit: String
+    private var _histoire: String
     
     var nom: String {
         return _nom
@@ -48,7 +49,11 @@ class Console {
         return _desc
     }
     
-    init(nom: String, logo: String, debut: Int, fin: Int, unite: Float, hit: String, rgb: [CGFloat], desc: String) {
+    var histoire: String {
+        return _histoire
+    }
+    
+    init(nom: String, logo: String, debut: Int, fin: Int, unite: Float, hit: String, rgb: [CGFloat], desc: String, histoire: String) {
         _nom = nom
         _logo = logo
         _image = UIImage(named: nom + ".png")
@@ -58,6 +63,7 @@ class Console {
         _unite = unite
         _hit = hit
         _desc = desc
+        _histoire = histoire
         _couleur = UIColor.lightGray
         if rgb.count == 3 {
             _couleur = colorFrom(red: rgb[0], green: rgb[1], blue: rgb[2])

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yki-AD-lo2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,6 +15,71 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Depart Controller-->
+        <scene sceneID="Rag-K3-zbO">
+            <objects>
+                <viewController id="ipX-J7-KhX" customClass="DepartController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kg8-1F-xre">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console retro.png" translatesAutoresizingMaskIntoConstraints="NO" id="dQc-1i-7T8">
+                                <rect key="frame" x="62.666666666666657" y="108" width="249.99999999999997" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Ukh-kQ-Ted"/>
+                                    <constraint firstAttribute="width" constant="250" id="XGr-dn-zO7"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M7o-Hg-0W5">
+                                <rect key="frame" x="20" y="398" width="335" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Bienvenue sur l'application des consoles retro. Decouvrez ou re-decouvrez toutes les histoires et anecdotes de toutes les consoles sorti en France.</string>
+                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOX-ja-E0t">
+                                <rect key="frame" x="50" y="688" width="275" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5Hr-go-dgk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="29"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="c'est parti">
+                                    <color key="titleColor" red="0.51372549019607838" green="0.46274509803921571" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="RetroBouton:" destination="ipX-J7-KhX" eventType="touchUpInside" id="sxo-pa-hOe"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="cEg-IM-yB9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51372549019607838" green="0.46274509803921571" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dQc-1i-7T8" firstAttribute="top" secondItem="uXS-fG-mcw" secondAttribute="top" constant="20" id="BJ5-hj-fqG"/>
+                            <constraint firstItem="uXS-fG-mcw" firstAttribute="trailing" secondItem="yOX-ja-E0t" secondAttribute="trailing" constant="50" id="K16-hY-orv"/>
+                            <constraint firstItem="dQc-1i-7T8" firstAttribute="centerX" secondItem="Kg8-1F-xre" secondAttribute="centerX" id="P8B-1s-vrl"/>
+                            <constraint firstItem="yOX-ja-E0t" firstAttribute="top" secondItem="M7o-Hg-0W5" secondAttribute="bottom" constant="40" id="e7Z-9J-Sxm"/>
+                            <constraint firstItem="uXS-fG-mcw" firstAttribute="bottom" secondItem="yOX-ja-E0t" secondAttribute="bottom" constant="50" id="lhs-ZQ-bZw"/>
+                            <constraint firstItem="uXS-fG-mcw" firstAttribute="trailing" secondItem="M7o-Hg-0W5" secondAttribute="trailing" constant="20" id="llj-aD-s5r"/>
+                            <constraint firstItem="M7o-Hg-0W5" firstAttribute="top" secondItem="dQc-1i-7T8" secondAttribute="bottom" constant="40" id="oSX-Uz-PMi"/>
+                            <constraint firstItem="yOX-ja-E0t" firstAttribute="leading" secondItem="uXS-fG-mcw" secondAttribute="leading" constant="50" id="qxy-Tf-aUy"/>
+                            <constraint firstItem="M7o-Hg-0W5" firstAttribute="leading" secondItem="uXS-fG-mcw" secondAttribute="leading" constant="20" id="v5k-RT-c3q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uXS-fG-mcw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9kp-DD-JdY"/>
+                    <connections>
+                        <outlet property="RetroImage" destination="dQc-1i-7T8" id="sAA-LE-rf9"/>
+                        <outlet property="RetroTextField" destination="M7o-Hg-0W5" id="xTP-GO-wmM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fC1-70-5LG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528.8" y="18.472906403940886"/>
+        </scene>
         <!--Home Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -100,7 +165,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MYi-eZ-gmY" secondAttribute="trailing" constant="20" id="bR3-E0-JMb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MYi-eZ-gmY" secondAttribute="trailing" constant="20" id="ckn-h5-vnA"/>
                             <constraint firstAttribute="trailing" secondItem="Gux-vC-Pae" secondAttribute="trailing" constant="20" id="e2z-j0-rbp"/>
-                            <constraint firstItem="vM0-71-MM8" firstAttribute="top" secondItem="uBh-44-fOt" secondAttribute="bottom" constant="20" id="jlE-73-OmT"/>
                             <constraint firstItem="MYi-eZ-gmY" firstAttribute="top" secondItem="uBh-44-fOt" secondAttribute="bottom" constant="20" id="kkS-2m-Zf7"/>
                             <constraint firstItem="MYi-eZ-gmY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qTu-q0-ndF"/>
                             <constraint firstItem="vM0-71-MM8" firstAttribute="top" secondItem="uBh-44-fOt" secondAttribute="bottom" constant="20" id="qaM-bd-ikV"/>
@@ -137,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994.39999999999998" y="25.862068965517242"/>
+            <point key="canvasLocation" x="2212" y="17.733990147783253"/>
         </scene>
         <!--Detail Controller-->
         <scene sceneID="AOF-Ik-gOV">
@@ -255,7 +319,6 @@
                             </constraint>
                             <constraint firstItem="Urq-sV-FR1" firstAttribute="bottom" secondItem="w6O-PL-2no" secondAttribute="bottom" constant="10" id="frh-bV-wSX"/>
                             <constraint firstItem="qqQ-Zk-QIW" firstAttribute="top" secondItem="Tnb-ri-Cpb" secondAttribute="bottom" constant="8" id="hS1-1E-bYi"/>
-                            <constraint firstItem="Urq-sV-FR1" firstAttribute="bottom" secondItem="qqQ-Zk-QIW" secondAttribute="bottom" constant="20" id="hiH-4T-Opw"/>
                             <constraint firstItem="fdA-UD-6fm" firstAttribute="top" secondItem="rYd-m7-5wO" secondAttribute="top" constant="100" id="hs6-G8-8Wv">
                                 <variation key="heightClass=compact" constant="40"/>
                             </constraint>
@@ -268,6 +331,7 @@
                             <constraint firstItem="i5U-Uz-DGw" firstAttribute="leading" secondItem="Urq-sV-FR1" secondAttribute="leading" constant="20" id="qh9-iY-NxI">
                                 <variation key="heightClass=compact" constant="200"/>
                             </constraint>
+                            <constraint firstItem="Urq-sV-FR1" firstAttribute="bottom" secondItem="qqQ-Zk-QIW" secondAttribute="bottom" constant="20" id="qjC-LV-YV9"/>
                             <constraint firstItem="w6O-PL-2no" firstAttribute="top" secondItem="Tnb-ri-Cpb" secondAttribute="bottom" constant="8" id="qkF-wC-hPj">
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
@@ -325,31 +389,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7E-c4-ref" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708" y="24.384236453201972"/>
+            <point key="canvasLocation" x="2874.4000000000001" y="17.733990147783253"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="5bJ-CP-CRf">
+        <scene sceneID="KUb-yR-OBq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yki-AD-lo2" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="php-T1-se7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NFZ-W7-CF4" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BUY-YM-0Ge">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IrG-hg-ZNx">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ga6-pA-6lJ"/>
+                        <segue destination="ipX-J7-KhX" kind="relationship" relationship="rootViewController" id="hwH-E1-jNW"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MdN-9G-sfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="25.862068965517242"/>
+            <point key="canvasLocation" x="586.39999999999998" y="18.472906403940886"/>
         </scene>
     </scenes>
     <resources>
         <image name="Game Boy Advance" width="864" height="596.70001220703125"/>
         <image name="Logo Game Boy Advance" width="1773" height="207"/>
         <image name="aleatoire" width="51.200000762939453" height="51.200000762939453"/>
+        <image name="console retro.png" width="447" height="388"/>
         <image name="droite" width="51.200000762939453" height="51.200000762939453"/>
         <image name="gauche" width="51.200000762939453" height="51.200000762939453"/>
     </resources>
