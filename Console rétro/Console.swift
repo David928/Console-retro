@@ -20,6 +20,9 @@ class Console {
     private var _unite: Float
     private var _hit: String
     private var _histoire: String
+    private var _histoire2: String
+    private var _modele2: String
+    private var _logomodele2: UIImage?
     
     var nom: String {
         return _nom
@@ -29,12 +32,20 @@ class Console {
         return _logo
     }
     
+    var modele2: String {
+        return _modele2
+    }
+    
     var image: UIImage? {
         return _image
     }
     
     var logoImage: UIImage? {
         return _logoImage
+    }
+    
+    var logomodele2: UIImage? {
+        return _logomodele2
     }
     
     var couleur: UIColor {
@@ -53,17 +64,24 @@ class Console {
         return _histoire
     }
     
-    init(nom: String, logo: String, debut: Int, fin: Int, unite: Float, hit: String, rgb: [CGFloat], desc: String, histoire: String) {
+    var histoire2: String {
+        return _histoire2
+    }
+    
+    init(nom: String, logo: String, modele2: String, debut: Int, fin: Int, unite: Float, hit: String, rgb: [CGFloat], desc: String, histoire: String, histoire2: String) {
         _nom = nom
         _logo = logo
+        _modele2 = modele2
         _image = UIImage(named: nom + ".png")
         _logoImage = UIImage(named: logo + ".png")
+        _logomodele2 = UIImage(named: modele2 + ".png")
         _debut = debut
         _fin = fin
         _unite = unite
         _hit = hit
         _desc = desc
         _histoire = histoire
+        _histoire2 = histoire
         _couleur = UIColor.lightGray
         if rgb.count == 3 {
             _couleur = colorFrom(red: rgb[0], green: rgb[1], blue: rgb[2])
