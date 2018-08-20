@@ -24,6 +24,9 @@ class DetailController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(toHistory))
+        RetroIV.addGestureRecognizer(tap)
 
         guard console != nil else { return }
         title = "Les consoles rétro"
@@ -34,5 +37,9 @@ class DetailController: UIViewController {
         HitLabel.text = console!.hitVendu()
         descTextField.text = console!.desc
         view.backgroundColor = console!.couleur
+    }
+    
+    @objc func toHistory() {
+        print("tap")
     }
 }

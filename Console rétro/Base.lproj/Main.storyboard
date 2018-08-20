@@ -302,10 +302,12 @@
                                 <variation key="heightClass=compact" constant="200"/>
                             </constraint>
                             <constraint firstItem="Urq-sV-FR1" firstAttribute="trailing" secondItem="Tnb-ri-Cpb" secondAttribute="trailing" constant="20" id="FMz-EM-hf8"/>
+                            <constraint firstItem="Urq-sV-FR1" firstAttribute="trailing" secondItem="qqQ-Zk-QIW" secondAttribute="trailing" constant="20" id="Jg2-Ge-ohV"/>
                             <constraint firstItem="qqQ-Zk-QIW" firstAttribute="leading" secondItem="w6O-PL-2no" secondAttribute="trailing" constant="20" id="JjD-FY-U6s"/>
                             <constraint firstItem="Urq-sV-FR1" firstAttribute="bottom" secondItem="Tnb-ri-Cpb" secondAttribute="bottom" constant="8" id="Jjq-hn-USJ"/>
                             <constraint firstItem="fdA-UD-6fm" firstAttribute="top" secondItem="Urq-sV-FR1" secondAttribute="top" constant="20" id="KXi-QI-nET"/>
                             <constraint firstItem="Tnb-ri-Cpb" firstAttribute="top" secondItem="w6O-PL-2no" secondAttribute="bottom" constant="10" id="Lra-1s-hU5"/>
+                            <constraint firstItem="qqQ-Zk-QIW" firstAttribute="leading" secondItem="Urq-sV-FR1" secondAttribute="leading" constant="20" id="Qli-LM-KS9"/>
                             <constraint firstItem="Urq-sV-FR1" firstAttribute="trailing" secondItem="fdA-UD-6fm" secondAttribute="trailing" constant="50" id="VVF-Fn-gnd">
                                 <variation key="heightClass=compact" constant="50"/>
                             </constraint>
@@ -325,17 +327,15 @@
                             <constraint firstItem="fdA-UD-6fm" firstAttribute="leading" secondItem="Urq-sV-FR1" secondAttribute="leading" constant="50" id="iOD-kJ-1hg">
                                 <variation key="heightClass=compact" constant="50"/>
                             </constraint>
-                            <constraint firstItem="Urq-sV-FR1" firstAttribute="trailing" secondItem="qqQ-Zk-QIW" secondAttribute="trailing" constant="20" id="lzP-wu-UPQ"/>
-                            <constraint firstItem="qqQ-Zk-QIW" firstAttribute="leading" secondItem="Urq-sV-FR1" secondAttribute="leading" constant="20" id="m90-EH-KW8"/>
-                            <constraint firstItem="qqQ-Zk-QIW" firstAttribute="top" secondItem="4sf-KH-HuL" secondAttribute="bottom" constant="10" id="mF5-yg-KAy"/>
                             <constraint firstItem="i5U-Uz-DGw" firstAttribute="leading" secondItem="Urq-sV-FR1" secondAttribute="leading" constant="20" id="qh9-iY-NxI">
                                 <variation key="heightClass=compact" constant="200"/>
                             </constraint>
-                            <constraint firstItem="Urq-sV-FR1" firstAttribute="bottom" secondItem="qqQ-Zk-QIW" secondAttribute="bottom" constant="20" id="qjC-LV-YV9"/>
                             <constraint firstItem="w6O-PL-2no" firstAttribute="top" secondItem="Tnb-ri-Cpb" secondAttribute="bottom" constant="8" id="qkF-wC-hPj">
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
+                            <constraint firstItem="qqQ-Zk-QIW" firstAttribute="top" secondItem="4sf-KH-HuL" secondAttribute="bottom" constant="10" id="qwu-yg-LYE"/>
                             <constraint firstItem="Tnb-ri-Cpb" firstAttribute="leading" secondItem="Urq-sV-FR1" secondAttribute="leading" constant="20" id="qyL-Z8-xQZ"/>
+                            <constraint firstItem="Urq-sV-FR1" firstAttribute="bottom" secondItem="qqQ-Zk-QIW" secondAttribute="bottom" constant="20" id="yfT-9L-hcW"/>
                             <constraint firstItem="Urq-sV-FR1" firstAttribute="trailing" secondItem="i5U-Uz-DGw" secondAttribute="trailing" constant="20" id="zOF-HN-zBC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Urq-sV-FR1"/>
@@ -374,7 +374,6 @@
                                 <exclude reference="qyL-Z8-xQZ"/>
                                 <include reference="JjD-FY-U6s"/>
                                 <exclude reference="hS1-1E-bYi"/>
-                                <exclude reference="m90-EH-KW8"/>
                             </mask>
                         </variation>
                     </view>
