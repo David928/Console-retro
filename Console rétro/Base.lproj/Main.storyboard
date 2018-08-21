@@ -30,13 +30,13 @@
                                 <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOX-ja-E0t">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOX-ja-E0t" customClass="BoutonArrondi" customModule="Console_re_tro" customModuleProvider="target">
                                 <rect key="frame" x="50" y="688" width="275" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5Hr-go-dgk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="29"/>
+                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="25"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="c'est parti">
                                     <color key="titleColor" red="0.51372549019607838" green="0.46274509803921571" blue="1" alpha="1" colorSpace="calibratedRGB"/>

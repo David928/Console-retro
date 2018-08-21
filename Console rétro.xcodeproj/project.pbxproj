@@ -19,6 +19,7 @@
 		2B5F8CFB21299D5600C80A51 /* console retro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5F8CFA21299D5600C80A51 /* console retro.png */; };
 		2B5F8D012129CB1100C80A51 /* RetroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F8D002129CB1100C80A51 /* RetroController.swift */; };
 		2B943D56212B17DA0024EB70 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B943D55212B17DA0024EB70 /* HistoryController.swift */; };
+		2B943D7D212CB8970024EB70 /* BoutonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B943D7C212CB8970024EB70 /* BoutonArrondi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		2B5F8CFA21299D5600C80A51 /* console retro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "console retro.png"; path = "retroAssets/Logo/console retro.png"; sourceTree = SOURCE_ROOT; };
 		2B5F8D002129CB1100C80A51 /* RetroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroController.swift; sourceTree = "<group>"; };
 		2B943D55212B17DA0024EB70 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		2B943D7C212CB8970024EB70 /* BoutonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonArrondi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				2B19BA382124951B00016E29 /* DetailController.swift */,
 				2B5F8D002129CB1100C80A51 /* RetroController.swift */,
 				2B943D55212B17DA0024EB70 /* HistoryController.swift */,
+				2B943D7C212CB8970024EB70 /* BoutonArrondi.swift */,
 			);
 			path = "Console rétro";
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				2B19BA302123781800016E29 /* HomeController.swift in Sources */,
 				2B19BA352124454A00016E29 /* Console.swift in Sources */,
 				2B943D56212B17DA0024EB70 /* HistoryController.swift in Sources */,
+				2B943D7D212CB8970024EB70 /* BoutonArrondi.swift in Sources */,
 				2B5F8CF72128928E00C80A51 /* ConsoleCollection.swift in Sources */,
 				2B19BA392124951B00016E29 /* DetailController.swift in Sources */,
 				2B19BA1E2123770A00016E29 /* AppDelegate.swift in Sources */,
