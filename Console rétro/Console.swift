@@ -81,7 +81,7 @@ class Console {
         _hit = hit
         _desc = desc
         _histoire = histoire
-        _histoire2 = histoire
+        _histoire2 = histoire2
         _couleur = UIColor.lightGray
         if rgb.count == 3 {
             _couleur = colorFrom(red: rgb[0], green: rgb[1], blue: rgb[2])

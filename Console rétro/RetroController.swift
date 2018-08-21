@@ -15,6 +15,7 @@ class RetroController: UIViewController {
     @IBOutlet weak var RetroIV: UIImageView!
     
     var consoles: [Console] = []
+    var console: Console?
     var index = 0
     var segueID = "Detail"
 

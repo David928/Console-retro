@@ -10,8 +10,6 @@ import UIKit
 
 class DetailController: UIViewController {
     
-    
-
     @IBOutlet weak var TitleLogo: UIImageView!
     @IBOutlet weak var RetroIV: UIImageView!
     @IBOutlet weak var dureeLabel: UILabel!
@@ -24,7 +22,6 @@ class DetailController: UIViewController {
     var index = 0
     var segueID = "History"
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         consoles = ConsoleCollection().obtenirListe()
