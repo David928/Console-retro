@@ -44,9 +44,10 @@ class DetailController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let consoleChoisie = console else { return }
         if segue.identifier == segueID {
             if let controller = segue.destination as? HistoryController {
-                controller.console = consoles[index]
+                controller.console = consoleChoisie
             }
         }
     }

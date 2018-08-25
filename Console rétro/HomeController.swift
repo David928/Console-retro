@@ -16,9 +16,11 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Les consoles rétro"
+
     }
-    
-    
+
     @IBAction func GoButton(_ sender: Any) {
         
     }

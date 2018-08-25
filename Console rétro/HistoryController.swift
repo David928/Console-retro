@@ -16,6 +16,8 @@ class HistoryController: UIViewController {
     @IBOutlet weak var HistorysTextView: UITextView!
     
     var console: Console?
+    var consoles: [Console] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
