@@ -24,14 +24,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M7o-Hg-0W5">
-                                <rect key="frame" x="20" y="438" width="335" height="210"/>
+                                <rect key="frame" x="20" y="388" width="335" height="240"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Bienvenue sur l'application des consoles retro. Decouvrez ou re-decouvrez toutes les histoires et anecdotes de toutes les consoles sorti en France.</string>
                                 <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console retro.png" translatesAutoresizingMaskIntoConstraints="NO" id="dQc-1i-7T8">
+                                <rect key="frame" x="37.666666666666657" y="118" width="300" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="D7j-Xe-6Zk"/>
+                                    <constraint firstAttribute="height" constant="250" id="WD4-bT-75J"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbz-33-Ha9" customClass="BoutonArrondi" customModule="Console_re_tro" customModuleProvider="target">
+                                <rect key="frame" x="50" y="708" width="275" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bdh-Me-E6y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="25"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Le quizz">
+                                    <color key="titleColor" red="0.51372549020000002" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="v9M-ao-waL" kind="show" identifier="GoQuiz" id="gbl-if-MDp"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOX-ja-E0t" customClass="BoutonArrondi" customModule="Console_re_tro" customModuleProvider="target">
-                                <rect key="frame" x="50" y="688" width="275" height="40"/>
+                                <rect key="frame" x="50" y="648" width="275" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5Hr-go-dgk"/>
@@ -47,25 +71,20 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="Goretro" id="cEg-IM-yB9"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console retro.png" translatesAutoresizingMaskIntoConstraints="NO" id="dQc-1i-7T8">
-                                <rect key="frame" x="37.666666666666657" y="118" width="300" height="300"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="D7j-Xe-6Zk"/>
-                                    <constraint firstAttribute="height" constant="300" id="WD4-bT-75J"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.51372549019607838" green="0.46274509803921571" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="sbz-33-Ha9" firstAttribute="top" secondItem="yOX-ja-E0t" secondAttribute="bottom" constant="20" id="3yS-K2-VZ0"/>
+                            <constraint firstItem="uXS-fG-mcw" firstAttribute="trailing" secondItem="sbz-33-Ha9" secondAttribute="trailing" constant="50" id="6Z1-wt-fS9"/>
                             <constraint firstItem="dQc-1i-7T8" firstAttribute="centerX" secondItem="Kg8-1F-xre" secondAttribute="centerX" id="Aee-J8-REq"/>
                             <constraint firstItem="uXS-fG-mcw" firstAttribute="trailing" secondItem="yOX-ja-E0t" secondAttribute="trailing" constant="50" id="K16-hY-orv"/>
                             <constraint firstItem="dQc-1i-7T8" firstAttribute="top" secondItem="uXS-fG-mcw" secondAttribute="top" constant="30" id="S4b-LT-CfR"/>
                             <constraint firstItem="M7o-Hg-0W5" firstAttribute="top" secondItem="dQc-1i-7T8" secondAttribute="bottom" constant="20" id="VJN-tc-qGw"/>
-                            <constraint firstItem="yOX-ja-E0t" firstAttribute="top" secondItem="M7o-Hg-0W5" secondAttribute="bottom" constant="40" id="e7Z-9J-Sxm"/>
-                            <constraint firstItem="uXS-fG-mcw" firstAttribute="bottom" secondItem="yOX-ja-E0t" secondAttribute="bottom" constant="50" id="lhs-ZQ-bZw"/>
+                            <constraint firstItem="uXS-fG-mcw" firstAttribute="bottom" secondItem="sbz-33-Ha9" secondAttribute="bottom" constant="30" id="VfX-cY-6wj"/>
+                            <constraint firstItem="yOX-ja-E0t" firstAttribute="top" secondItem="M7o-Hg-0W5" secondAttribute="bottom" constant="20" id="e7Z-9J-Sxm"/>
                             <constraint firstItem="uXS-fG-mcw" firstAttribute="trailing" secondItem="M7o-Hg-0W5" secondAttribute="trailing" constant="20" id="llj-aD-s5r"/>
                             <constraint firstItem="yOX-ja-E0t" firstAttribute="leading" secondItem="uXS-fG-mcw" secondAttribute="leading" constant="50" id="qxy-Tf-aUy"/>
+                            <constraint firstItem="sbz-33-Ha9" firstAttribute="leading" secondItem="uXS-fG-mcw" secondAttribute="leading" constant="50" id="sAt-Ag-amM"/>
                             <constraint firstItem="M7o-Hg-0W5" firstAttribute="leading" secondItem="uXS-fG-mcw" secondAttribute="leading" constant="20" id="v5k-RT-c3q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uXS-fG-mcw"/>
@@ -79,6 +98,174 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fC1-70-5LG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2471.1999999999998" y="18.472906403940886"/>
+        </scene>
+        <!--Accueil Controller-->
+        <scene sceneID="bTR-wk-Js3">
+            <objects>
+                <viewController id="v9M-ao-waL" customClass="AccueilController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aac-dO-Lhs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console retro.png" translatesAutoresizingMaskIntoConstraints="NO" id="CsY-u3-BiL">
+                                <rect key="frame" x="20" y="108" width="335" height="540"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meilleur score: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymF-rE-GWl">
+                                <rect key="frame" x="20" y="668" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FWk-YH-jgn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToF-NI-ebW" customClass="BoutonArrondi" customModule="Console_re_tro" customModuleProvider="target">
+                                <rect key="frame" x="20" y="718" width="335" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LHI-vG-xpW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="25"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Jouer">
+                                    <color key="titleColor" red="0.51372549020000002" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ctr-hK-OAH" kind="show" id="gSx-g1-ZQ7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51372549020000002" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="007-AG-eTR" firstAttribute="trailing" secondItem="ToF-NI-ebW" secondAttribute="trailing" constant="20" id="0bk-LP-ghT"/>
+                            <constraint firstItem="ToF-NI-ebW" firstAttribute="leading" secondItem="007-AG-eTR" secondAttribute="leading" constant="20" id="1Kp-8O-U5c"/>
+                            <constraint firstItem="ToF-NI-ebW" firstAttribute="top" secondItem="ymF-rE-GWl" secondAttribute="bottom" constant="20" id="AUG-2K-8bH"/>
+                            <constraint firstItem="ymF-rE-GWl" firstAttribute="top" secondItem="CsY-u3-BiL" secondAttribute="bottom" constant="20" id="K2B-6a-kRc"/>
+                            <constraint firstItem="CsY-u3-BiL" firstAttribute="top" secondItem="007-AG-eTR" secondAttribute="top" constant="20" id="Psq-NO-The"/>
+                            <constraint firstItem="CsY-u3-BiL" firstAttribute="leading" secondItem="007-AG-eTR" secondAttribute="leading" constant="20" id="SPL-DG-PSf"/>
+                            <constraint firstItem="007-AG-eTR" firstAttribute="bottom" secondItem="ToF-NI-ebW" secondAttribute="bottom" constant="20" id="c7j-Iq-Pzu"/>
+                            <constraint firstItem="007-AG-eTR" firstAttribute="trailing" secondItem="ymF-rE-GWl" secondAttribute="trailing" constant="20" id="ldz-01-f3T"/>
+                            <constraint firstItem="ymF-rE-GWl" firstAttribute="leading" secondItem="007-AG-eTR" secondAttribute="leading" constant="20" id="nmj-xJ-uJ9"/>
+                            <constraint firstItem="007-AG-eTR" firstAttribute="trailing" secondItem="CsY-u3-BiL" secondAttribute="trailing" constant="20" id="zrp-61-xN1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="007-AG-eTR"/>
+                    </view>
+                    <connections>
+                        <outlet property="MeilleurScoreLabel" destination="ymF-rE-GWl" id="nnC-pl-5xz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUt-mR-xsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3264.8000000000002" y="484.72906403940891"/>
+        </scene>
+        <!--Quizz Controller-->
+        <scene sceneID="PWO-eM-8yw">
+            <objects>
+                <viewController id="Ctr-hK-OAH" customClass="QuizzController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NlT-XS-D78">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tz-i4-bfK">
+                                <rect key="frame" x="16" y="96" width="343" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="I6W-qM-EM1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji5-wr-Gw2">
+                                <rect key="frame" x="16" y="216" width="343" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="JwK-iY-6jA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jMA-aG-TOY">
+                                <rect key="frame" x="30" y="446" width="315" height="210"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J02-Ct-Vsm" customClass="MonBouton" customModule="Console_re_tro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
+                                        <color key="backgroundColor" red="0.51372549020000002" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="qYq-yN-mTQ"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="boutonAppuye:" destination="Ctr-hK-OAH" eventType="touchUpInside" id="70a-m7-P83"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvv-FK-Zwg" customClass="MonBouton" customModule="Console_re_tro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="315" height="30"/>
+                                        <color key="backgroundColor" red="0.51372549020000002" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5ie-Or-f5h"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="boutonAppuye:" destination="Ctr-hK-OAH" eventType="touchUpInside" id="O9z-TR-ZK9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYK-7p-Nel" customClass="MonBouton" customModule="Console_re_tro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="315" height="30"/>
+                                        <color key="backgroundColor" red="0.51372549020000002" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="DcN-Tf-Txf"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="boutonAppuye:" destination="Ctr-hK-OAH" eventType="touchUpInside" id="fqj-y7-VmW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dod-hl-Sbj" customClass="MonBouton" customModule="Console_re_tro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="180" width="315" height="30"/>
+                                        <color key="backgroundColor" red="0.51372549020000002" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8DA-DH-SCF"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="boutonAppuye:" destination="Ctr-hK-OAH" eventType="touchUpInside" id="w9C-ge-elJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="js6-We-hNm" firstAttribute="trailing" secondItem="1Tz-i4-bfK" secondAttribute="trailing" constant="16" id="4DV-yp-fSb"/>
+                            <constraint firstItem="js6-We-hNm" firstAttribute="bottom" secondItem="jMA-aG-TOY" secondAttribute="bottom" constant="20" id="7pU-po-sY9"/>
+                            <constraint firstItem="jMA-aG-TOY" firstAttribute="top" secondItem="Ji5-wr-Gw2" secondAttribute="bottom" constant="30" id="BNh-Fg-4iR"/>
+                            <constraint firstItem="Ji5-wr-Gw2" firstAttribute="leading" secondItem="js6-We-hNm" secondAttribute="leading" constant="16" id="H81-bR-9FH"/>
+                            <constraint firstItem="jMA-aG-TOY" firstAttribute="leading" secondItem="js6-We-hNm" secondAttribute="leading" constant="30" id="OJ8-Mx-XCM"/>
+                            <constraint firstItem="Ji5-wr-Gw2" firstAttribute="top" secondItem="1Tz-i4-bfK" secondAttribute="bottom" constant="30" id="Qbt-K7-CnK"/>
+                            <constraint firstItem="1Tz-i4-bfK" firstAttribute="leading" secondItem="js6-We-hNm" secondAttribute="leading" constant="16" id="Z1c-jv-ADg"/>
+                            <constraint firstItem="1Tz-i4-bfK" firstAttribute="top" secondItem="js6-We-hNm" secondAttribute="top" constant="8" id="djQ-at-tis"/>
+                            <constraint firstItem="js6-We-hNm" firstAttribute="trailing" secondItem="jMA-aG-TOY" secondAttribute="trailing" constant="30" id="fYf-9f-UyH"/>
+                            <constraint firstItem="js6-We-hNm" firstAttribute="trailing" secondItem="Ji5-wr-Gw2" secondAttribute="trailing" constant="16" id="sAW-af-vSt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="js6-We-hNm"/>
+                    </view>
+                    <connections>
+                        <outlet property="bouton1" destination="J02-Ct-Vsm" id="BWv-Lg-abl"/>
+                        <outlet property="bouton2" destination="fvv-FK-Zwg" id="NgP-4l-mE3"/>
+                        <outlet property="bouton3" destination="KYK-7p-Nel" id="nno-nR-v7h"/>
+                        <outlet property="bouton4" destination="dod-hl-Sbj" id="xkn-LZ-iPl"/>
+                        <outlet property="questionLabel" destination="Ji5-wr-Gw2" id="ogw-Wj-BFB"/>
+                        <outlet property="scoreLabel" destination="1Tz-i4-bfK" id="BTU-gM-evs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMp-Cr-pDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4014" y="485"/>
         </scene>
         <!--Retro Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -452,7 +639,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F2m-aK-3Gf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Game Boy Pocket" translatesAutoresizingMaskIntoConstraints="NO" id="F2m-aK-3Gf">
                                 <rect key="frame" x="100" y="403" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="VjQ-Np-cdt"/>
@@ -518,6 +705,7 @@
     </scenes>
     <resources>
         <image name="Game Boy Advance" width="864" height="596.70001220703125"/>
+        <image name="Game Boy Pocket" width="311" height="499"/>
         <image name="Logo Game Boy Advance" width="1773" height="207"/>
         <image name="aleatoire" width="51.200000762939453" height="51.200000762939453"/>
         <image name="console retro.png" width="447" height="388"/>
