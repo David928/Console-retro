@@ -10,12 +10,18 @@ import UIKit
 
 class Question {
     
+    private var _nom: String
     private var _question: String
     private var _reponse1: String
     private var _reponse2: String
     private var _reponse3: String
     private var _reponse4: String
     private var _tagCorrect: Int
+    private var _imageQuestion: UIImage?
+    
+    var nom: String {
+        return _nom
+    }
     
     var question: String {
         return _question
@@ -41,12 +47,18 @@ class Question {
         return _tagCorrect
     }
     
-    init(question: String, rep1: String, rep2: String, rep3: String, rep4: String, tag: Int) {
+    var imageQuestion: UIImage? {
+        return _imageQuestion
+    }
+    
+    init(nom: String, question: String, rep1: String, rep2: String, rep3: String, rep4: String, tag: Int) {
+        self._nom = nom
         self._question = question
         self._reponse1 = rep1
         self._reponse2 = rep2
         self._reponse3 = rep3
         self._reponse4 = rep4
         self._tagCorrect = tag
+        self._imageQuestion = UIImage(named: nom + ".png")
     }
 }

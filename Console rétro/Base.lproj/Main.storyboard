@@ -250,6 +250,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Super Nintendo" translatesAutoresizingMaskIntoConstraints="NO" id="dwa-13-2kX">
+                                <rect key="frame" x="20" y="378" width="335" height="260"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="00e-4J-ECg">
                                 <rect key="frame" x="16" y="658" width="343" height="100"/>
                                 <subviews>
@@ -403,12 +406,16 @@
                             <constraint firstItem="Req-eW-uSk" firstAttribute="trailing" secondItem="js6-We-hNm" secondAttribute="trailing" id="UiO-fx-zEe"/>
                             <constraint firstItem="00e-4J-ECg" firstAttribute="top" secondItem="zte-91-oFV" secondAttribute="bottom" constant="300" id="b7i-Vo-PE7"/>
                             <constraint firstItem="js6-We-hNm" firstAttribute="trailing" secondItem="OdH-Ua-94W" secondAttribute="trailing" constant="20" id="ewb-iT-QNq"/>
+                            <constraint firstItem="js6-We-hNm" firstAttribute="trailing" secondItem="dwa-13-2kX" secondAttribute="trailing" constant="20" id="hec-h8-vNs"/>
                             <constraint firstItem="zte-91-oFV" firstAttribute="leading" secondItem="js6-We-hNm" secondAttribute="leading" constant="16" id="kPA-Lk-Xz1"/>
                             <constraint firstItem="Req-eW-uSk" firstAttribute="top" secondItem="js6-We-hNm" secondAttribute="top" id="kt8-zr-RS7"/>
+                            <constraint firstItem="dwa-13-2kX" firstAttribute="top" secondItem="zte-91-oFV" secondAttribute="bottom" constant="20" id="lUp-7D-3b3"/>
                             <constraint firstItem="5AY-V4-geL" firstAttribute="top" secondItem="js6-We-hNm" secondAttribute="top" constant="8" id="pGM-jz-2DI"/>
+                            <constraint firstItem="dwa-13-2kX" firstAttribute="leading" secondItem="js6-We-hNm" secondAttribute="leading" constant="20" id="rVH-Cf-4PN"/>
                             <constraint firstItem="js6-We-hNm" firstAttribute="trailing" secondItem="zte-91-oFV" secondAttribute="trailing" constant="16" id="sIA-yh-tBF"/>
                             <constraint firstItem="5AY-V4-geL" firstAttribute="leading" secondItem="js6-We-hNm" secondAttribute="leading" constant="16" id="w5D-Fv-dWl"/>
                             <constraint firstItem="zte-91-oFV" firstAttribute="top" secondItem="5AY-V4-geL" secondAttribute="bottom" constant="50" id="wlk-Wv-tQ9"/>
+                            <constraint firstItem="00e-4J-ECg" firstAttribute="top" secondItem="dwa-13-2kX" secondAttribute="bottom" constant="20" id="yzJ-SI-Rzq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="js6-We-hNm"/>
                     </view>
@@ -418,6 +425,7 @@
                         <outlet property="bouton2" destination="xWD-Fd-sfu" id="2cP-XU-aB8"/>
                         <outlet property="bouton3" destination="bcd-R3-Fhe" id="sYA-xC-4a6"/>
                         <outlet property="bouton4" destination="ILA-87-ob7" id="9bO-sg-mR1"/>
+                        <outlet property="imageQuestion" destination="dwa-13-2kX" id="VMG-a8-K39"/>
                         <outlet property="popBouton" destination="iE0-0R-KgY" id="TgT-mH-RaU"/>
                         <outlet property="popReponse" destination="vU2-OS-550" id="n4p-Vy-DoC"/>
                         <outlet property="popResultat" destination="myt-YC-ZEl" id="AXg-98-Edl"/>
@@ -869,6 +877,7 @@
         <image name="Game Boy Advance" width="864" height="596.70001220703125"/>
         <image name="Game Boy Pocket" width="311" height="499"/>
         <image name="Logo Game Boy Advance" width="1773" height="207"/>
+        <image name="Super Nintendo" width="1200" height="1050"/>
         <image name="aleatoire" width="51.200000762939453" height="51.200000762939453"/>
         <image name="console retro.png" width="447" height="388"/>
         <image name="droite" width="51.200000762939453" height="51.200000762939453"/>
