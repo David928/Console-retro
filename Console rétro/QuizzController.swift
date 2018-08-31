@@ -17,10 +17,21 @@ class QuizzController: UIViewController {
     @IBOutlet weak var bouton3: MonBouton!
     @IBOutlet weak var bouton4: MonBouton!
     
+    @IBOutlet weak var blur: UIVisualEffectView!
+    @IBOutlet weak var popup: MaVue!
+    @IBOutlet weak var popResultat: UILabel!
+    @IBOutlet weak var popReponse: UILabel!
+    @IBOutlet weak var popBouton: UIButton!
+    
     var questions = [Question]()
+    var questionPosee: Question?
+    var questionActuelle = 0
+    var score = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        questions = peuplerQuestions()
+        obtenirQuestion()
     }
     
     func peuplerQuestions() -> [Question] {
@@ -42,21 +53,85 @@ class QuizzController: UIViewController {
         mesQuestions.append(question7)
         let question8 = Question(question: "En quel année est sorti la PSP?", rep1: "2004", rep2: "2000", rep3: "2006", rep4: "2005", tag: 1)
         mesQuestions.append(question8)
+        let question9 = Question(question: "En quel année est sorti la NES?", rep1: "1982", rep2: "1985", rep3: "1983", rep4: "1980", tag: 3)
+        mesQuestions.append(question9)
+        let question10 = Question(question: "En quel année est sorti la Magadrive?", rep1: "1984", rep2: "1986", rep3: "1990", rep4: "1988", tag: 4)
+        mesQuestions.append(question10)
         
-        
-        
+      
         return mesQuestions
     }
     
+    func obtenirQuestion() {
+        if questionActuelle < 10 {
+            questionActuelle += 1
+            scoreLabel.miseAJour(questionActuelle, score)
+            questionPosee = questions[questionActuelle - 1]
+            if let question = questionPosee {
+                questionLabel.text = question.question
+                bouton1.setTitle(question.reponse1, for: .normal)
+                bouton2.setTitle(question.reponse2, for: .normal)
+                bouton3.setTitle(question.reponse3, for: .normal)
+                bouton4.setTitle(question.reponse4, for: .normal)
+            } else {
+                self.navigationController?.popViewController(animated: true)
+            }
+
+        } else {
+            let meilleurScore = UserDefaults.standard.integer(forKey: "Score")
+            if score > meilleurScore {
+                UserDefaults.standard.set(score, forKey: "Score")
+                UserDefaults.standard.synchronize()
+            }
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
     
-    
-    
-    
-    
-    
-    
-    @IBAction func boutonAppuye(_ sender: Any) {
+    func montrerPopUp(gagne: Bool, reponse: String) {
+        popReponse.text = "La bonne réponse était: " + reponse
+        if gagne {
+            popResultat.text = "Félicitations"
+        } else {
+            popResultat.text = "Mauvaise réponse"
+        }
+        UIView.animate(withDuration: 0.3, animations: {
+            self.blur.alpha = 1
+            self.popup.alpha = 1
+        }) { (success) in
+            //
+        }
     }
     
     
+    
+    @IBAction func popBoutonAppuye(_ sender: Any) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.blur.alpha = 0
+            self.popup.alpha = 0
+        }) { (success) in
+            self.obtenirQuestion()
+        }
+    }
+    
+    
+    @IBAction func boutonAppuye(_ sender: Any) {
+    if let question = questionPosee, let bouton = sender as? UIButton {
+            if question.tagCorrect == bouton.tag {
+                score += 1
+                montrerPopUp(gagne: true, reponse: bouton.titleLabel?.text  ?? "")
+            } else {
+                var reponse: String?
+                switch question.tagCorrect {
+                case 1: reponse = bouton1.titleLabel?.text
+                case 2: reponse = bouton2.titleLabel?.text
+                case 3: reponse = bouton3.titleLabel?.text
+                case 4: reponse = bouton4.titleLabel?.text
+                default: break
+                }
+                montrerPopUp(gagne: false, reponse: reponse ?? "")
+            }
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
 }

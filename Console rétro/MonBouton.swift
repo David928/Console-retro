@@ -24,9 +24,7 @@ class MonBouton: UIButton {
       
         tintColor = UIColor.white
         
-        
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
-        
         layer.cornerRadius = 10
         layer.shadowColor = UIColor.darkGray.cgColor
         layer.shadowOffset = CGSize(width: 3, height: 3)

@@ -19,6 +19,8 @@
 		2B3FEDED2135F29500C32670 /* QuizzController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEDEC2135F29500C32670 /* QuizzController.swift */; };
 		2B3FEDEF2135F40600C32670 /* MonBouton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEDEE2135F40600C32670 /* MonBouton.swift */; };
 		2B3FEDF1213600AB00C32670 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEDF0213600AB00C32670 /* Question.swift */; };
+		2B3FEDF32136A27A00C32670 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEDF22136A27A00C32670 /* Extensions.swift */; };
+		2B3FEDF52136EA7F00C32670 /* MaVue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEDF42136EA7F00C32670 /* MaVue.swift */; };
 		2B5F8CF72128928E00C80A51 /* ConsoleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */; };
 		2B5F8CFB21299D5600C80A51 /* console retro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5F8CFA21299D5600C80A51 /* console retro.png */; };
 		2B5F8D012129CB1100C80A51 /* RetroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F8D002129CB1100C80A51 /* RetroController.swift */; };
@@ -41,6 +43,8 @@
 		2B3FEDEC2135F29500C32670 /* QuizzController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzController.swift; sourceTree = "<group>"; };
 		2B3FEDEE2135F40600C32670 /* MonBouton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonBouton.swift; sourceTree = "<group>"; };
 		2B3FEDF0213600AB00C32670 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		2B3FEDF22136A27A00C32670 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2B3FEDF42136EA7F00C32670 /* MaVue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaVue.swift; sourceTree = "<group>"; };
 		2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleCollection.swift; sourceTree = "<group>"; };
 		2B5F8CFA21299D5600C80A51 /* console retro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "console retro.png"; path = "retroAssets/Logo/console retro.png"; sourceTree = SOURCE_ROOT; };
 		2B5F8D002129CB1100C80A51 /* RetroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				2B3FEDEC2135F29500C32670 /* QuizzController.swift */,
 				2B3FEDEE2135F40600C32670 /* MonBouton.swift */,
 				2B3FEDF0213600AB00C32670 /* Question.swift */,
+				2B3FEDF22136A27A00C32670 /* Extensions.swift */,
+				2B3FEDF42136EA7F00C32670 /* MaVue.swift */,
 			);
 			path = "Console rétro";
 			sourceTree = "<group>";
@@ -189,6 +195,8 @@
 				2B943D7D212CB8970024EB70 /* BoutonArrondi.swift in Sources */,
 				2B5F8CF72128928E00C80A51 /* ConsoleCollection.swift in Sources */,
 				2B19BA392124951B00016E29 /* DetailController.swift in Sources */,
+				2B3FEDF52136EA7F00C32670 /* MaVue.swift in Sources */,
+				2B3FEDF32136A27A00C32670 /* Extensions.swift in Sources */,
 				2B19BA1E2123770A00016E29 /* AppDelegate.swift in Sources */,
 				2B3FEDF1213600AB00C32670 /* Question.swift in Sources */,
 				2B3FEDED2135F29500C32670 /* QuizzController.swift in Sources */,

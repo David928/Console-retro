@@ -23,18 +23,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nintendo 64" translatesAutoresizingMaskIntoConstraints="NO" id="nAC-QP-XJ3">
-                                <rect key="frame" x="40" y="357" width="295" height="98.333333333333314"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console retro.png" translatesAutoresizingMaskIntoConstraints="NO" id="nAC-QP-XJ3">
+                                <rect key="frame" x="20" y="322.33333333333331" width="335" height="167.33333333333331"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="nAC-QP-XJ3" secondAttribute="height" multiplier="3:1" id="DcJ-fj-Qim"/>
+                                    <constraint firstAttribute="width" secondItem="nAC-QP-XJ3" secondAttribute="height" multiplier="2:1" id="DcJ-fj-Qim"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Les consoles retro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="J4B-ov-HuZ">
-                                <rect key="frame" x="20" y="287" width="335" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Les consoles retro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="J4B-ov-HuZ">
+                                <rect key="frame" x="20" y="192.33333333333334" width="335" height="80.000000000000028"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="f4d-Pu-qgE"/>
+                                    <constraint firstAttribute="height" constant="80" id="f4d-Pu-qgE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -42,10 +42,10 @@
                         <color key="backgroundColor" red="0.51372549019607838" green="0.46274509803921571" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="nAC-QP-XJ3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="NIn-Yb-GZE"/>
-                            <constraint firstItem="nAC-QP-XJ3" firstAttribute="top" secondItem="J4B-ov-HuZ" secondAttribute="bottom" constant="20" id="RfC-h4-fJ9"/>
-                            <constraint firstItem="nAC-QP-XJ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="UTp-vC-fVJ"/>
+                            <constraint firstItem="nAC-QP-XJ3" firstAttribute="top" secondItem="J4B-ov-HuZ" secondAttribute="bottom" constant="50" id="RfC-h4-fJ9"/>
+                            <constraint firstItem="nAC-QP-XJ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UTp-vC-fVJ"/>
                             <constraint firstItem="J4B-ov-HuZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ifP-Wf-NCh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nAC-QP-XJ3" secondAttribute="trailing" constant="40" id="sSw-3P-DTU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nAC-QP-XJ3" secondAttribute="trailing" constant="20" id="sSw-3P-DTU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J4B-ov-HuZ" secondAttribute="trailing" constant="20" id="ujB-28-fu4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -57,6 +57,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Nintendo 64" width="361" height="286"/>
+        <image name="console retro.png" width="447" height="388"/>
     </resources>
 </document>

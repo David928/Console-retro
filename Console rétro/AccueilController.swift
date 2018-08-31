@@ -17,4 +17,11 @@ class AccueilController: UIViewController {
         super.viewDidLoad()
         title = "Quizz console rétro"
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let meilleurScore = UserDefaults.standard.integer(forKey: "Score")
+        let scoreString = "Meilleur score : \(meilleurScore)/10"
+        MeilleurScoreLabel.text = scoreString
+    }
 }
