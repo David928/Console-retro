@@ -24,6 +24,5 @@ class HomeController: UIViewController {
     @IBAction func GoButton(_ sender: Any) {
         
     }
-    
 }
 

@@ -12,10 +12,12 @@ class MaVue:UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        miseEnPlace()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        miseEnPlace()
     }
     
     func miseEnPlace() {

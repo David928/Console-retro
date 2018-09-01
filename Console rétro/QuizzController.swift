@@ -22,7 +22,8 @@ class QuizzController: UIViewController {
     @IBOutlet weak var popup: MaVue!
     @IBOutlet weak var popResultat: UILabel!
     @IBOutlet weak var popReponse: UILabel!
-    @IBOutlet weak var popBouton: UIButton!
+    @IBOutlet weak var popBouton: BoutonArrondi!
+    
     
     var questions = [Question]()
     var questionPosee: Question?
@@ -58,8 +59,6 @@ class QuizzController: UIViewController {
         mesQuestions.append(question9)
         let question10 = Question(nom: "Sega Mega Drive", question: "En quel année est sorti la Magadrive?", rep1: "1984", rep2: "1986", rep3: "1990", rep4: "1988", tag: 4)
         mesQuestions.append(question10)
-        
-      
         return mesQuestions
     }
     
@@ -90,11 +89,12 @@ class QuizzController: UIViewController {
     }
     
     func montrerPopUp(gagne: Bool, reponse: String) {
-        popReponse.text = "La bonne réponse était: " + reponse
         if gagne {
             popResultat.text = "Félicitations"
+            popReponse.text = "La bonne réponse était bien:\n " + reponse
         } else {
             popResultat.text = "Mauvaise réponse"
+            popReponse.text = "La bonne réponse était:\n " + reponse
         }
         UIView.animate(withDuration: 0.3, animations: {
             self.blur.alpha = 1
@@ -104,8 +104,6 @@ class QuizzController: UIViewController {
         }
     }
     
-    
-    
     @IBAction func popBoutonAppuye(_ sender: Any) {
         UIView.animate(withDuration: 0.3, animations: {
             self.blur.alpha = 0
@@ -114,7 +112,6 @@ class QuizzController: UIViewController {
             self.obtenirQuestion()
         }
     }
-    
     
     @IBAction func boutonAppuye(_ sender: Any) {
     if let question = questionPosee, let bouton = sender as? UIButton {

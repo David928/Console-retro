@@ -1,15 +1,15 @@
 //
-//  BoutonArrondi.swift
+//  labelArrondi.swift
 //  Console rétro
 //
-//  Created by GONZALES David on 21/08/2018.
+//  Created by GONZALES David on 31/08/2018.
 //  Copyright © 2018 GONZALES David. All rights reserved.
 //
 
 import UIKit
 
-class BoutonArrondi: UIButton {
-    
+class labelArrondi: UILabel {
+
     //Intialiseur
     required init?(coder aDecoder: NSCoder) {
         //Initialiseur de la classe parente
@@ -18,15 +18,14 @@ class BoutonArrondi: UIButton {
         //Coins arrondis
         layer.cornerRadius = 15
         
-        //layer.backgroundColor = UIColor.black.cgColor
-
-        tintColor = UIColor.white
+        //Couleur de fond
+        layer.backgroundColor = UIColor.white.cgColor
         
         //Couleur de la bordure
         //layer.borderColor = UIColor.black.cgColor
         
         //Epaisseur de la bordure
-        //layer.borderWidth = 2
+        //layer.borderWidth = 1
         
         //Ombre
         layer.shadowColor = UIColor.darkGray.cgColor
@@ -36,9 +35,12 @@ class BoutonArrondi: UIButton {
         
         //Couleur du texte
         //setTitleColor(UIColor.black, for: .normal)
+        tintColor = UIColor.white
+
         
         //Padding a gauche et a droite
-        contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+        //contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
         
     }
+
 }
