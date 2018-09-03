@@ -22,11 +22,11 @@
 		2B3FEDF32136A27A00C32670 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEDF22136A27A00C32670 /* Extensions.swift */; };
 		2B3FEDF52136EA7F00C32670 /* MaVue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEDF42136EA7F00C32670 /* MaVue.swift */; };
 		2B4243262139F1B4000CCE75 /* labelArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4243252139F1B4000CCE75 /* labelArrondi.swift */; };
+		2B424328213DE0E6000CCE75 /* QuestionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B424327213DE0E5000CCE75 /* QuestionCollection.swift */; };
 		2B5F8CF72128928E00C80A51 /* ConsoleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */; };
 		2B5F8CFB21299D5600C80A51 /* console retro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5F8CFA21299D5600C80A51 /* console retro.png */; };
 		2B5F8D012129CB1100C80A51 /* RetroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F8D002129CB1100C80A51 /* RetroController.swift */; };
 		2B943D56212B17DA0024EB70 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B943D55212B17DA0024EB70 /* HistoryController.swift */; };
-		2B943D7D212CB8970024EB70 /* BoutonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B943D7C212CB8970024EB70 /* BoutonArrondi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,11 +47,11 @@
 		2B3FEDF22136A27A00C32670 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2B3FEDF42136EA7F00C32670 /* MaVue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaVue.swift; sourceTree = "<group>"; };
 		2B4243252139F1B4000CCE75 /* labelArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelArrondi.swift; sourceTree = "<group>"; };
+		2B424327213DE0E5000CCE75 /* QuestionCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCollection.swift; sourceTree = "<group>"; };
 		2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleCollection.swift; sourceTree = "<group>"; };
 		2B5F8CFA21299D5600C80A51 /* console retro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "console retro.png"; path = "retroAssets/Logo/console retro.png"; sourceTree = SOURCE_ROOT; };
 		2B5F8D002129CB1100C80A51 /* RetroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroController.swift; sourceTree = "<group>"; };
 		2B943D55212B17DA0024EB70 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
-		2B943D7C212CB8970024EB70 /* BoutonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonArrondi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,8 @@
 		2B19BA1C2123770A00016E29 /* Console rétro */ = {
 			isa = PBXGroup;
 			children = (
+				2B424329213DE328000CCE75 /* Histoire */,
+				2B42432A213DE332000CCE75 /* Quiz */,
 				2B19BA31212419EA00016E29 /* Ressources */,
 				2B19BA1D2123770A00016E29 /* AppDelegate.swift */,
 				2B19BA212123770A00016E29 /* Main.storyboard */,
@@ -91,18 +93,8 @@
 				2B19BA262123770C00016E29 /* LaunchScreen.storyboard */,
 				2B19BA292123770C00016E29 /* Info.plist */,
 				2B19BA2F2123781800016E29 /* HomeController.swift */,
-				2B19BA342124454A00016E29 /* Console.swift */,
-				2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */,
-				2B19BA382124951B00016E29 /* DetailController.swift */,
-				2B5F8D002129CB1100C80A51 /* RetroController.swift */,
-				2B943D55212B17DA0024EB70 /* HistoryController.swift */,
-				2B943D7C212CB8970024EB70 /* BoutonArrondi.swift */,
 				2B3FEDEA2135F1A200C32670 /* AccueilController.swift */,
-				2B3FEDEC2135F29500C32670 /* QuizzController.swift */,
 				2B3FEDEE2135F40600C32670 /* MonBouton.swift */,
-				2B3FEDF0213600AB00C32670 /* Question.swift */,
-				2B3FEDF22136A27A00C32670 /* Extensions.swift */,
-				2B3FEDF42136EA7F00C32670 /* MaVue.swift */,
 				2B4243252139F1B4000CCE75 /* labelArrondi.swift */,
 			);
 			path = "Console rétro";
@@ -115,6 +107,30 @@
 				2B19BA3221241A4900016E29 /* Retro60Prime.ttf */,
 			);
 			path = Ressources;
+			sourceTree = "<group>";
+		};
+		2B424329213DE328000CCE75 /* Histoire */ = {
+			isa = PBXGroup;
+			children = (
+				2B19BA342124454A00016E29 /* Console.swift */,
+				2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */,
+				2B5F8D002129CB1100C80A51 /* RetroController.swift */,
+				2B19BA382124951B00016E29 /* DetailController.swift */,
+				2B943D55212B17DA0024EB70 /* HistoryController.swift */,
+			);
+			path = Histoire;
+			sourceTree = "<group>";
+		};
+		2B42432A213DE332000CCE75 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				2B3FEDF0213600AB00C32670 /* Question.swift */,
+				2B424327213DE0E5000CCE75 /* QuestionCollection.swift */,
+				2B3FEDEC2135F29500C32670 /* QuizzController.swift */,
+				2B3FEDF22136A27A00C32670 /* Extensions.swift */,
+				2B3FEDF42136EA7F00C32670 /* MaVue.swift */,
+			);
+			path = Quiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +212,7 @@
 				2B4243262139F1B4000CCE75 /* labelArrondi.swift in Sources */,
 				2B19BA352124454A00016E29 /* Console.swift in Sources */,
 				2B943D56212B17DA0024EB70 /* HistoryController.swift in Sources */,
-				2B943D7D212CB8970024EB70 /* BoutonArrondi.swift in Sources */,
+				2B424328213DE0E6000CCE75 /* QuestionCollection.swift in Sources */,
 				2B5F8CF72128928E00C80A51 /* ConsoleCollection.swift in Sources */,
 				2B19BA392124951B00016E29 /* DetailController.swift in Sources */,
 				2B3FEDF52136EA7F00C32670 /* MaVue.swift in Sources */,

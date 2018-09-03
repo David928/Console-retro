@@ -21,7 +21,7 @@ class AccueilController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let meilleurScore = UserDefaults.standard.integer(forKey: "Score")
-        let scoreString = "Meilleur score : \(meilleurScore)/10"
+        let scoreString = "Meilleur score : \(meilleurScore)/20"
         MeilleurScoreLabel.text = scoreString
     }
 }
