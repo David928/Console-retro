@@ -34,8 +34,8 @@ class labelArrondi: UILabel {
         layer.shadowRadius = 3
         
         //Couleur du texte
-        //setTitleColor(UIColor.black, for: .normal)
-        tintColor = UIColor.white
+        //setTitleColor(UIColor(red: 131, green: 118, blue: 255, alpha: 1), for: .normal)
+        //tintColor = UIColor.white
 
         
         //Padding a gauche et a droite

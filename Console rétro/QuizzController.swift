@@ -29,6 +29,7 @@ class QuizzController: UIViewController {
     var questionPosee: Question?
     var questionActuelle = 0
     var score = 0
+    var emptyArray = [Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +67,11 @@ class QuizzController: UIViewController {
         if questionActuelle < 10 {
             questionActuelle += 1
             scoreLabel.miseAJour(questionActuelle, score)
-            questionPosee = questions[questionActuelle - 1]
+            for _ in questions {
+                questionActuelle = Int(arc4random_uniform(UInt32(questions.count - 1)))
+                emptyArray.append(questionActuelle)
+                questions.remove(at: questionActuelle)
+            }
             if let question = questionPosee {
                 questionLabel.text = question.question
                 imageQuestion.image = question.imageQuestion
