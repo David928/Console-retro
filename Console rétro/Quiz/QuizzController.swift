@@ -24,12 +24,10 @@ class QuizzController: UIViewController {
     @IBOutlet weak var popReponse: UILabel!
     @IBOutlet weak var popBouton: MonBouton!
     
-    
     var questions = [Question]()
     var questionPosee: Question?
     var questionActuelle = 0
     var score = 0
-    var emptyArray = [Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,17 +35,11 @@ class QuizzController: UIViewController {
         obtenirQuestion()
     }
     
-    
     func obtenirQuestion() {
         if questionActuelle < 20 {
             questionActuelle += 1
             scoreLabel.miseAJour(questionActuelle, score)
             questionPosee = questions[questionActuelle - 1]
-            //for _ in questions {
-                //questionActuelle = Int(arc4random_uniform(UInt32(questions.count - 1)))
-                //emptyArray.append(questionActuelle)
-                //questions.remove(at: questionActuelle)
-            //}
             if let question = questionPosee {
                 questionLabel.text = question.question
                 imageQuestion.image = question.imageQuestion
