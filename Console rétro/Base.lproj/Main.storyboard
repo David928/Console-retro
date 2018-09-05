@@ -804,7 +804,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7E-c4-ref" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4015" y="-175"/>
+            <point key="canvasLocation" x="4690" y="-605"/>
         </scene>
         <!--History Controller-->
         <scene sceneID="PEg-g1-Wux">
@@ -823,25 +823,10 @@
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNm-18-BCS">
-                                <rect key="frame" x="20" y="136" width="335" height="272"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNm-18-BCS">
+                                <rect key="frame" x="20" y="136" width="335" height="622"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console retro.png" translatesAutoresizingMaskIntoConstraints="NO" id="F2m-aK-3Gf">
-                                <rect key="frame" x="112.66666666666669" y="428" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="SfL-SG-C34"/>
-                                    <constraint firstAttribute="height" constant="150" id="z0P-FY-j66"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDa-jC-CPM">
-                                <rect key="frame" x="20" y="598" width="335" height="160"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -849,34 +834,41 @@
                         </subviews>
                         <color key="backgroundColor" red="0.51372549020000002" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="hzz-if-n9e" firstAttribute="bottom" secondItem="pNm-18-BCS" secondAttribute="bottom" constant="20" id="1b2-ZZ-AmA"/>
                             <constraint firstItem="cbT-yc-Fac" firstAttribute="top" secondItem="f4P-oc-y1r" secondAttribute="top" constant="95" id="8kM-Ax-PNv">
                                 <variation key="heightClass=compact" constant="50"/>
                             </constraint>
                             <constraint firstItem="hzz-if-n9e" firstAttribute="trailing" secondItem="cbT-yc-Fac" secondAttribute="trailing" constant="20" id="BHp-Ol-cBe"/>
-                            <constraint firstItem="hDa-jC-CPM" firstAttribute="top" secondItem="F2m-aK-3Gf" secondAttribute="bottom" constant="20" id="HKt-i2-6Yk"/>
-                            <constraint firstItem="hzz-if-n9e" firstAttribute="bottom" secondItem="hDa-jC-CPM" secondAttribute="bottom" constant="20" id="JKQ-hS-cjs"/>
                             <constraint firstItem="pNm-18-BCS" firstAttribute="top" secondItem="cbT-yc-Fac" secondAttribute="bottom" constant="20" id="Rpn-pA-Zbd"/>
-                            <constraint firstItem="hDa-jC-CPM" firstAttribute="leading" secondItem="hzz-if-n9e" secondAttribute="leading" constant="20" id="UPa-XY-voO"/>
-                            <constraint firstItem="hzz-if-n9e" firstAttribute="bottom" secondItem="F2m-aK-3Gf" secondAttribute="bottom" constant="200" id="ZSr-5v-Kbl"/>
-                            <constraint firstItem="hzz-if-n9e" firstAttribute="trailing" secondItem="hDa-jC-CPM" secondAttribute="trailing" constant="20" id="agI-pe-mMs"/>
                             <constraint firstItem="cbT-yc-Fac" firstAttribute="leading" secondItem="hzz-if-n9e" secondAttribute="leading" constant="20" id="arH-Pp-lxU"/>
-                            <constraint firstItem="F2m-aK-3Gf" firstAttribute="centerX" secondItem="f4P-oc-y1r" secondAttribute="centerX" id="bdr-ry-6v3"/>
-                            <constraint firstItem="F2m-aK-3Gf" firstAttribute="top" secondItem="pNm-18-BCS" secondAttribute="bottom" constant="20" id="llj-lp-3hu"/>
                             <constraint firstItem="pNm-18-BCS" firstAttribute="leading" secondItem="hzz-if-n9e" secondAttribute="leading" constant="20" id="m8w-fm-YqS"/>
                             <constraint firstItem="hzz-if-n9e" firstAttribute="trailing" secondItem="pNm-18-BCS" secondAttribute="trailing" constant="20" id="yjj-4b-L8X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hzz-if-n9e"/>
                     </view>
                     <connections>
-                        <outlet property="HistoryImage" destination="F2m-aK-3Gf" id="QFC-eX-iEQ"/>
                         <outlet property="HistoryLabel" destination="cbT-yc-Fac" id="wFK-iN-Ism"/>
                         <outlet property="HistoryTextView" destination="pNm-18-BCS" id="CR8-i3-UF8"/>
-                        <outlet property="HistorysTextView" destination="hDa-jC-CPM" id="lH8-zr-udJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAz-fs-Bc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4764" y="-176"/>
+            <point key="canvasLocation" x="5486" y="-175"/>
+        </scene>
+        <!--Jeux Controller-->
+        <scene sceneID="Iyr-H6-evy">
+            <objects>
+                <viewController id="e8B-vc-HDh" customClass="JeuxController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6nv-sK-Xgg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yO2-h1-gD8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8E-Op-Spc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5518" y="485"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GF0-GE-zte">

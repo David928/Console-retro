@@ -12,8 +12,6 @@ class HistoryController: UIViewController {
     
     @IBOutlet weak var HistoryLabel: UILabel!
     @IBOutlet weak var HistoryTextView: UITextView!
-    @IBOutlet weak var HistoryImage: UIImageView!
-    @IBOutlet weak var HistorysTextView: UITextView!
     
     var console: Console?
     var consoles: [Console] = []
@@ -24,9 +22,9 @@ class HistoryController: UIViewController {
         guard console != nil else { return }
         title = console!.nom
         HistoryLabel.text = "L'histoire de la console " + console!.nom
-        HistoryTextView.text = console!.histoire
-        HistoryImage.image = console!.logomodele2
-        HistorysTextView.text = console!.histoire2
+        HistoryTextView.text = console!.histoire + "\n" + console!.histoire2
+        
+        
         view.backgroundColor = console!.couleur
     }
 }

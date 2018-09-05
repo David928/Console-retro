@@ -19,7 +19,6 @@ class DetailController: UIViewController {
     
     var consoles: [Console] = []
     var console: Console?
-    var index = 0
     var segueID = "History"
     
     override func viewDidLoad() {
