@@ -355,7 +355,9 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wAx-Xy-ghL">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" red="0.58431372549019611" green="0.56029778718948364" blue="0.97264426946640015" alpha="0.25" colorSpace="custom" customColorSpace="displayP3"/>
                                 </view>
+                                <color key="backgroundColor" red="0.58240306377410889" green="0.56029778718948364" blue="0.97264426946640015" alpha="0.30824593321917809" colorSpace="custom" customColorSpace="displayP3"/>
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZF-U5-XT3" customClass="MaVue" customModule="Console_re_tro" customModuleProvider="target">
