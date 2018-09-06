@@ -98,7 +98,6 @@
 				2B3FEDEA2135F1A200C32670 /* AccueilController.swift */,
 				2B3FEDEE2135F40600C32670 /* MonBouton.swift */,
 				2B4243252139F1B4000CCE75 /* labelArrondi.swift */,
-				2B42432B214020EA000CCE75 /* JeuxController.swift */,
 			);
 			path = "Console rétro";
 			sourceTree = "<group>";
@@ -120,6 +119,7 @@
 				2B5F8D002129CB1100C80A51 /* RetroController.swift */,
 				2B19BA382124951B00016E29 /* DetailController.swift */,
 				2B943D55212B17DA0024EB70 /* HistoryController.swift */,
+				2B42432B214020EA000CCE75 /* JeuxController.swift */,
 			);
 			path = Histoire;
 			sourceTree = "<group>";

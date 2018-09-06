@@ -578,14 +578,14 @@
                         <outlet property="LogoImage" destination="vM0-71-MM8" id="aW4-Jt-Iii"/>
                         <outlet property="RetroIV" destination="Gux-vC-Pae" id="yfs-Il-SpQ"/>
                         <outlet property="TitleLabel" destination="uBh-44-fOt" id="JHb-iM-VTJ"/>
-                        <segue destination="483-hz-c0C" kind="show" identifier="Detail" id="1NG-tP-3Eb"/>
+                        <segue destination="d51-nW-MFm" kind="show" identifier="Detail" id="ovr-U4-ocd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3266" y="-175"/>
         </scene>
-        <!--Detail Controller-->
+        <!--Description-->
         <scene sceneID="AOF-Ik-gOV">
             <objects>
                 <viewController id="483-hz-c0C" customClass="DetailController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
@@ -594,7 +594,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqQ-Zk-QIW">
-                                <rect key="frame" x="20" y="438" width="335" height="320"/>
+                                <rect key="frame" x="20" y="438" width="335" height="271"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -792,6 +792,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Description" id="bDw-On-qqA"/>
                     <connections>
                         <outlet property="HitLabel" destination="4sf-KH-HuL" id="qCS-m5-0QG"/>
                         <outlet property="RetroIV" destination="w6O-PL-2no" id="tZ8-h8-ort"/>
@@ -799,14 +800,13 @@
                         <outlet property="UniteLabel" destination="i5U-Uz-DGw" id="kyS-bj-Fpw"/>
                         <outlet property="descTextField" destination="qqQ-Zk-QIW" id="2AB-Cr-dj9"/>
                         <outlet property="dureeLabel" destination="Tnb-ri-Cpb" id="QGf-NB-XQG"/>
-                        <segue destination="ib8-oR-hPj" kind="show" identifier="History" id="eMI-wN-kvM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7E-c4-ref" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4690" y="-605"/>
+            <point key="canvasLocation" x="5548" y="-175.1231527093596"/>
         </scene>
-        <!--History Controller-->
+        <!--Histoire-->
         <scene sceneID="PEg-g1-Wux">
             <objects>
                 <viewController id="ib8-oR-hPj" customClass="HistoryController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
@@ -824,7 +824,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNm-18-BCS">
-                                <rect key="frame" x="20" y="136" width="335" height="622"/>
+                                <rect key="frame" x="20" y="136" width="335" height="573"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -846,6 +846,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hzz-if-n9e"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Histoire" id="Duu-1L-pZ0"/>
                     <connections>
                         <outlet property="HistoryLabel" destination="cbT-yc-Fac" id="wFK-iN-Ism"/>
                         <outlet property="HistoryTextView" destination="pNm-18-BCS" id="CR8-i3-UF8"/>
@@ -853,9 +854,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAz-fs-Bc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5486" y="-175"/>
+            <point key="canvasLocation" x="6436" y="-434.48275862068965"/>
         </scene>
-        <!--Jeux Controller-->
+        <!--Jeux-->
         <scene sceneID="Iyr-H6-evy">
             <objects>
                 <viewController id="e8B-vc-HDh" customClass="JeuxController" customModule="Console_re_tro" customModuleProvider="target" sceneMemberID="viewController">
@@ -865,10 +866,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yO2-h1-gD8"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Jeux" id="c3w-E6-kxW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8E-Op-Spc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5518" y="485"/>
+            <point key="canvasLocation" x="6418.3999999999996" y="203.94088669950739"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GF0-GE-zte">
@@ -887,6 +889,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQ2-jx-g2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1528.8" y="18.472906403940886"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LH0-gh-16X">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="d51-nW-MFm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t4y-Ox-z0D">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="483-hz-c0C" kind="relationship" relationship="viewControllers" id="yRe-9F-8W4"/>
+                        <segue destination="ib8-oR-hPj" kind="relationship" relationship="viewControllers" id="xYI-HR-NJq"/>
+                        <segue destination="e8B-vc-HDh" kind="relationship" relationship="viewControllers" id="5gU-Ah-fpG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K09-al-FdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4605.6000000000004" y="-115.27093596059113"/>
         </scene>
     </scenes>
     <resources>
