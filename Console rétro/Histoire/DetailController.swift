@@ -14,41 +14,25 @@ class DetailController: UIViewController {
     @IBOutlet weak var RetroIV: UIImageView!
     @IBOutlet weak var dureeLabel: UILabel!
     @IBOutlet weak var UniteLabel: UILabel!
-    @IBOutlet weak var HitLabel: UILabel!
     @IBOutlet weak var descTextField: UITextView!
     
     var consoles: [Console] = []
     var console: Console?
-    var segueID = "History"
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        consoles = ConsoleCollection().obtenirListe()
-        let tap = UITapGestureRecognizer(target: self, action: #selector(toHistory))
-        RetroIV.addGestureRecognizer(tap)
         
         guard console != nil else { return }
-        title = "Les consoles rétro"
+        title = console!.nom
         TitleLogo.image = console!.logoImage
         RetroIV.image = console!.image
         dureeLabel.text = console!.cycleDeVie()
         UniteLabel.text = console!.uniteVendu()
-        HitLabel.text = console!.hitVendu()
         descTextField.text = console!.desc
         view.backgroundColor = console!.couleur
     }
     
-    @objc func toHistory() {
-        performSegue(withIdentifier: segueID, sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let consoleChoisie = console else { return }
-        if segue.identifier == segueID {
-            if let controller = segue.destination as? HistoryController {
-                controller.console = consoleChoisie
-            }
-        }
-    }
+   
     
 }

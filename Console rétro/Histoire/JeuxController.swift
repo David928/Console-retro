@@ -9,9 +9,22 @@
 import UIKit
 
 class JeuxController: UIViewController {
-
+    
+    @IBOutlet weak var TitleLogo: UIImageView!
+    @IBOutlet weak var HitLabel: UILabel!
+    @IBOutlet weak var JeuxTextView: UITextView!
+    
+    var console: Console?
+    var consoles: [Console] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        guard console != nil else { return }
+        title = console!.nom
+        TitleLogo.image = console!.logoImage
+        HitLabel.text = console!.hitVendu()
+        JeuxTextView.text = console!.histoire2
+        view.backgroundColor = console!.couleur
     }
 }

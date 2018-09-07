@@ -95,7 +95,6 @@
 				2B19BA262123770C00016E29 /* LaunchScreen.storyboard */,
 				2B19BA292123770C00016E29 /* Info.plist */,
 				2B19BA2F2123781800016E29 /* HomeController.swift */,
-				2B3FEDEA2135F1A200C32670 /* AccueilController.swift */,
 				2B3FEDEE2135F40600C32670 /* MonBouton.swift */,
 				2B4243252139F1B4000CCE75 /* labelArrondi.swift */,
 			);
@@ -129,6 +128,7 @@
 			children = (
 				2B3FEDF0213600AB00C32670 /* Question.swift */,
 				2B424327213DE0E5000CCE75 /* QuestionCollection.swift */,
+				2B3FEDEA2135F1A200C32670 /* AccueilController.swift */,
 				2B3FEDEC2135F29500C32670 /* QuizzController.swift */,
 				2B3FEDF22136A27A00C32670 /* Extensions.swift */,
 				2B3FEDF42136EA7F00C32670 /* MaVue.swift */,
