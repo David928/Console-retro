@@ -17,7 +17,7 @@ class RetroController: UIViewController {
     var consoles: [Console] = []
     var console: Console?
     var index = 0
-    var segueID = "Detail"
+    var segueID = "Tab"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +57,7 @@ class RetroController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == segueID {
+        if segue.identifier == "tab" {
             if let controller = segue.destination as? DetailController {
                 controller.console = consoles[index]
             }
@@ -70,6 +70,7 @@ class RetroController: UIViewController {
         } else {
             index -= 1
         }
+        performSegue(withIdentifier: "Tab", sender: index)
         setup()
     }
     
@@ -79,11 +80,13 @@ class RetroController: UIViewController {
         } else {
             index += 1
         }
+        performSegue(withIdentifier: "Tab", sender: index)
         setup()
     }
     
     @IBAction func RandomPressed(_ sender: Any) {
         index = Int.random(in: 0..<consoles.count)
+        performSegue(withIdentifier: "Tab", sender: index)
         setup()
     }
 }

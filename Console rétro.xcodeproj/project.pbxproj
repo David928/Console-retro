@@ -27,6 +27,7 @@
 		2B5F8CF72128928E00C80A51 /* ConsoleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */; };
 		2B5F8CFB21299D5600C80A51 /* console retro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5F8CFA21299D5600C80A51 /* console retro.png */; };
 		2B5F8D012129CB1100C80A51 /* RetroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F8D002129CB1100C80A51 /* RetroController.swift */; };
+		2B70285C215E96510004D0F6 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B70285B215E96510004D0F6 /* TabController.swift */; };
 		2B943D56212B17DA0024EB70 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B943D55212B17DA0024EB70 /* HistoryController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleCollection.swift; sourceTree = "<group>"; };
 		2B5F8CFA21299D5600C80A51 /* console retro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "console retro.png"; path = "retroAssets/Logo/console retro.png"; sourceTree = SOURCE_ROOT; };
 		2B5F8D002129CB1100C80A51 /* RetroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroController.swift; sourceTree = "<group>"; };
+		2B70285B215E96510004D0F6 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		2B943D55212B17DA0024EB70 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 		2B424329213DE328000CCE75 /* Histoire */ = {
 			isa = PBXGroup;
 			children = (
+				2B70285B215E96510004D0F6 /* TabController.swift */,
 				2B19BA342124454A00016E29 /* Console.swift */,
 				2B5F8CF62128928E00C80A51 /* ConsoleCollection.swift */,
 				2B5F8D002129CB1100C80A51 /* RetroController.swift */,
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3FEDEB2135F1A200C32670 /* AccueilController.swift in Sources */,
+				2B70285C215E96510004D0F6 /* TabController.swift in Sources */,
 				2B5F8D012129CB1100C80A51 /* RetroController.swift in Sources */,
 				2B19BA302123781800016E29 /* HomeController.swift in Sources */,
 				2B4243262139F1B4000CCE75 /* labelArrondi.swift in Sources */,
