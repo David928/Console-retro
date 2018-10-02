@@ -21,14 +21,15 @@ class TabController: UITabBarController {
         if console != nil, viewControllers != nil {
             for controller in viewControllers! {
                 if let un = controller as? DetailController {
-                    un.console = console!                }
+                    un.console = console!
+                }
                 if let deux = controller as? HistoryController {
                     deux.console = console!
                 }
                 if let trois = controller as? JeuxController {
                     trois.console = console!
+                }
             }
         }
     }
-}
 }

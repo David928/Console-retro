@@ -20,11 +20,12 @@ class JeuxController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard console != nil else { return }
+        if console != nil {
         title = console!.nom
         TitleLogo.image = console!.logoImage
         HitLabel.text = console!.hitVendu()
         JeuxTextView.text = console!.histoire2
         view.backgroundColor = console!.couleur
+        }
     }
 }

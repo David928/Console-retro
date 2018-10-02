@@ -22,7 +22,7 @@ class RetroController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         consoles = ConsoleCollection().obtenirListe()
-        let tap = UITapGestureRecognizer(target: self, action: #selector(toDetail))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(toTab))
         RetroIV.addGestureRecognizer(tap)
         setup()
     }
@@ -43,9 +43,8 @@ class RetroController: UIViewController {
         super.viewDidDisappear(animated)
     }
     
-    @objc func toDetail() {
-        performSegue(withIdentifier: segueID, sender: nil)
-        
+    @objc func toTab() {
+        performSegue(withIdentifier: "Tab", sender: consoles)
     }
     
     func setup() {
@@ -70,7 +69,6 @@ class RetroController: UIViewController {
         } else {
             index -= 1
         }
-        performSegue(withIdentifier: "Tab", sender: index)
         setup()
     }
     
@@ -80,13 +78,11 @@ class RetroController: UIViewController {
         } else {
             index += 1
         }
-        performSegue(withIdentifier: "Tab", sender: index)
         setup()
     }
     
     @IBAction func RandomPressed(_ sender: Any) {
         index = Int.random(in: 0..<consoles.count)
-        performSegue(withIdentifier: "Tab", sender: index)
         setup()
     }
 }
